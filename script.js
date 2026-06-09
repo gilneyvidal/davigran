@@ -1,141 +1,155 @@
 const whatsappNumber = "5511996826361";
 
 const defaultMessage =
-  "Olá, vim pelo site da Davigran e gostaria de solicitar um orçamento de granilite.";
+  "Olá, vim pelo site da Davigran e gostaria de solicitar um orçamento.";
 
 const services = [
   {
-    category: "Pisos em granilite",
-    name: "Piso de granilite sob medida",
+    category: "Granilite",
+    name: "Aplicação de piso de granilite",
     description:
-      "Execução de piso em granilite para áreas residenciais, comerciais e projetos personalizados.",
+      "Aplicação de piso de granilite para áreas residenciais, comerciais e projetos sob medida.",
     image: "assets/servicos/piso-granilite.jpg"
   },
   {
-    category: "Acabamento interno",
-    name: "Granilite polido",
+    category: "Granilite resistente",
+    name: "Granilite cilindrado",
     description:
-      "Acabamento elegante para ambientes internos, com visual sofisticado e fácil valorização do espaço.",
-    image: "assets/servicos/granilite-polido.jpg"
+      "Opção de granilite mais resistente, indicada para quem busca durabilidade, acabamento firme e longa vida útil.",
+    image: "assets/servicos/granilite-cilindrado.jpg"
   },
   {
-    category: "Área externa",
-    name: "Granilite fulgê",
+    category: "Fulget",
+    name: "Piso fulget",
     description:
-      "Opção indicada para áreas externas, rampas, calçadas e locais que precisam de acabamento mais aderente.",
-    image: "assets/servicos/granilite-fulge.jpg"
+      "Aplicação de fulget para áreas externas, calçadas, rampas e locais que precisam de acabamento resistente e aderente.",
+    image: "assets/servicos/fulget.jpg"
   },
   {
-    category: "Projetos especiais",
-    name: "Bancadas em granilite",
+    category: "Ardósia",
+    name: "Raspagem de ardósia",
     description:
-      "Solução personalizada para bancadas, lavatórios, áreas gourmet e detalhes decorativos.",
-    image: "assets/servicos/bancada-granilite.jpg"
+      "Serviço de raspagem de ardósia para revitalizar o piso e melhorar o aspecto da superfície.",
+    image: "assets/servicos/raspagem-ardosia.jpg"
   },
   {
-    category: "Escadas",
-    name: "Escadas em granilite",
+    category: "Limpeza",
+    name: "Limpeza em geral",
     description:
-      "Revestimento para escadas com acabamento resistente, durável e visual personalizado.",
-    image: "assets/servicos/escada-granilite.jpg"
+      "Limpeza de pisos, superfícies e áreas com acabamento em pedra, granilite ou materiais semelhantes.",
+    image: "assets/servicos/limpeza-geral.jpg"
   },
   {
-    category: "Restauração",
-    name: "Manutenção e recuperação",
+    category: "Mármore",
+    name: "Caco de mármore",
     description:
-      "Serviços de recuperação, revitalização e manutenção de superfícies em granilite.",
+      "Serviço com caco de mármore para composições resistentes, decorativas e personalizadas.",
+    image: "assets/servicos/caco-marmore.jpg"
+  },
+  {
+    category: "Granito natural",
+    name: "Colocação de granito natural",
+    description:
+      "Colocação de granito natural para ambientes que exigem resistência, beleza e acabamento de alto padrão.",
+    image: "assets/servicos/granito-natural.jpg"
+  },
+  {
+    category: "Manutenção",
+    name: "Recuperação e manutenção",
+    description:
+      "Serviços de recuperação, revitalização e manutenção de pisos e acabamentos já existentes.",
     image: "assets/servicos/manutencao-granilite.jpg"
   }
 ];
 
 const galleryItems = [
   {
-    title: "Piso em granilite finalizado",
-    category: "Pisos",
+    title: "Aplicação de piso de granilite",
+    category: "Granilite",
     image: "assets/servicos/galeria-01.jpg"
   },
   {
-    title: "Acabamento polido em ambiente interno",
-    category: "Granilite polido",
+    title: "Granilite cilindrado mais resistente",
+    category: "Granilite cilindrado",
     image: "assets/servicos/galeria-02.jpg"
   },
   {
-    title: "Granilite para área externa",
-    category: "Área externa",
+    title: "Piso fulget para área externa",
+    category: "Fulget",
     image: "assets/servicos/galeria-03.jpg"
   },
   {
-    title: "Detalhe de superfície em granilite",
-    category: "Detalhes",
+    title: "Raspagem de ardósia",
+    category: "Ardósia",
     image: "assets/servicos/galeria-04.jpg"
+  },
+  {
+    title: "Limpeza e revitalização de piso",
+    category: "Limpeza em geral",
+    image: "assets/servicos/galeria-05.jpg"
+  },
+  {
+    title: "Acabamento com caco de mármore",
+    category: "Caco de mármore",
+    image: "assets/servicos/galeria-06.jpg"
+  },
+  {
+    title: "Colocação de granito natural",
+    category: "Granito natural",
+    image: "assets/servicos/galeria-07.jpg"
+  },
+  {
+    title: "Piso restaurado",
+    category: "Manutenção",
+    image: "assets/servicos/galeria-08.jpg"
   },
   {
     title: "Projeto residencial sob medida",
     category: "Residencial",
-    image: "assets/servicos/galeria-05.jpg"
-  },
-  {
-    title: "Projeto comercial em granilite",
-    category: "Comercial",
-    image: "assets/servicos/galeria-06.jpg"
-  },
-  {
-    title: "Escada revestida em granilite",
-    category: "Escadas",
-    image: "assets/servicos/galeria-07.jpg"
-  },
-  {
-    title: "Bancada personalizada",
-    category: "Bancadas",
-    image: "assets/servicos/galeria-08.jpg"
-  },
-  {
-    title: "Ambiente com acabamento decorativo",
-    category: "Decorativo",
     image: "assets/servicos/galeria-09.jpg"
   },
   {
-    title: "Granilite com composição personalizada",
-    category: "Sob medida",
+    title: "Projeto comercial com piso resistente",
+    category: "Comercial",
     image: "assets/servicos/galeria-10.jpg"
   },
   {
-    title: "Piso restaurado em granilite",
-    category: "Restauração",
+    title: "Detalhe de superfície em granilite",
+    category: "Detalhes",
     image: "assets/servicos/galeria-11.jpg"
   },
   {
-    title: "Acabamento em área de circulação",
+    title: "Acabamento resistente para circulação",
     category: "Pisos",
     image: "assets/servicos/galeria-12.jpg"
   },
   {
-    title: "Detalhe de paginação do piso",
-    category: "Paginação",
+    title: "Área externa com acabamento aderente",
+    category: "Área externa",
     image: "assets/servicos/galeria-13.jpg"
   },
   {
-    title: "Granilite para hall de entrada",
-    category: "Ambientes",
+    title: "Revitalização de ambiente",
+    category: "Revitalização",
     image: "assets/servicos/galeria-14.jpg"
   },
   {
-    title: "Projeto com visual moderno",
-    category: "Design",
+    title: "Granilite aplicado em ambiente amplo",
+    category: "Ambientes amplos",
     image: "assets/servicos/galeria-15.jpg"
   },
   {
-    title: "Área gourmet com granilite",
-    category: "Área gourmet",
+    title: "Acabamento personalizado",
+    category: "Sob medida",
     image: "assets/servicos/galeria-16.jpg"
   },
   {
-    title: "Superfície personalizada",
-    category: "Personalização",
+    title: "Detalhe de cor e composição",
+    category: "Composição",
     image: "assets/servicos/galeria-17.jpg"
   },
   {
-    title: "Acabamento resistente para uso diário",
+    title: "Piso para uso diário",
     category: "Durabilidade",
     image: "assets/servicos/galeria-18.jpg"
   },
@@ -150,48 +164,48 @@ const galleryItems = [
     image: "assets/servicos/galeria-20.jpg"
   },
   {
-    title: "Granilite em ambiente amplo",
-    category: "Ambientes amplos",
-    image: "assets/servicos/galeria-21.jpg"
-  },
-  {
-    title: "Detalhe de cor e pedra",
-    category: "Composição",
-    image: "assets/servicos/galeria-22.jpg"
-  },
-  {
-    title: "Acabamento para circulação externa",
-    category: "Externo",
-    image: "assets/servicos/galeria-23.jpg"
-  },
-  {
-    title: "Granilite aplicado em área social",
-    category: "Social",
-    image: "assets/servicos/galeria-24.jpg"
-  },
-  {
-    title: "Projeto técnico sob medida",
-    category: "Sob medida",
-    image: "assets/servicos/galeria-25.jpg"
-  },
-  {
     title: "Piso com acabamento uniforme",
     category: "Acabamento",
-    image: "assets/servicos/galeria-26.jpg"
+    image: "assets/servicos/galeria-21.jpg"
   },
   {
     title: "Detalhe de borda e canto",
     category: "Detalhamento",
+    image: "assets/servicos/galeria-22.jpg"
+  },
+  {
+    title: "Aplicação em área social",
+    category: "Área social",
+    image: "assets/servicos/galeria-23.jpg"
+  },
+  {
+    title: "Piso com visual renovado",
+    category: "Renovação",
+    image: "assets/servicos/galeria-24.jpg"
+  },
+  {
+    title: "Pedras naturais em destaque",
+    category: "Pedras naturais",
+    image: "assets/servicos/galeria-25.jpg"
+  },
+  {
+    title: "Serviço técnico sob medida",
+    category: "Sob medida",
+    image: "assets/servicos/galeria-26.jpg"
+  },
+  {
+    title: "Superfície recuperada",
+    category: "Recuperação",
     image: "assets/servicos/galeria-27.jpg"
   },
   {
-    title: "Granilite para área comercial",
-    category: "Comercial",
+    title: "Projeto com acabamento durável",
+    category: "Durabilidade",
     image: "assets/servicos/galeria-28.jpg"
   },
   {
-    title: "Ambiente renovado com granilite",
-    category: "Renovação",
+    title: "Ambiente transformado",
+    category: "Transformação",
     image: "assets/servicos/galeria-29.jpg"
   },
   {
